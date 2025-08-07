@@ -1,0 +1,17 @@
+FROM python:3.10-alpine
+
+# set the work dir
+WORKDIR /app
+
+# Paste Everything into the /app folder inside of docker
+COPY source dest
+
+# Copy requirements.txt
+COPY  ../requirements.txt  /app
+RUN uv add -r requirements.txt
+
+
+
+EXPOSE 8000
+CMD [ "uv run","src/main.py" ]
+

@@ -1,0 +1,9 @@
+fastapi["standard"]
+numpy 
+pandas
+scikit-learn
+torch
+torchvision
+transformers
+plotly
+python-dotenv
