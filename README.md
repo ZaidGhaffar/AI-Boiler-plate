@@ -29,6 +29,14 @@ this is a boilerplate for AI projects, which includes a basic structure for orga
    ```bash
    python main.py
    ```
+
+# Deleting git files
+If you need to delete git files, you can use the following command:
+```bash
+Remove-Item -Recurse -Force .git
+```
+
+
 # Contributing
 Contributions are welcome! Please feel free to submit a pull request or open an issue if you find any bugs or have suggestions for improvements.
 # License
